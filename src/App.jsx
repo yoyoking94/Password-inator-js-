@@ -11,8 +11,6 @@ function App() {
   const [password, setPassword] = useState('')
   const [value, setValue] = useState(50)
 
-  console.log(value);
-
   return (
     <div className='App'>
       <span className='appTitle'>Password-inator</span>
