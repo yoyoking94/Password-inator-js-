@@ -17,7 +17,7 @@ function App() {
     <div className='App'>
       <span className='appTitle'>Password-inator</span>
       <Preview password={password} setPassword={setPassword} />
-      <ParameterContainer value={value} /* setValue={setValue}  *//>
+      <ParameterContainer value={value} setValue={setValue} />
     </div>
   )
 }
