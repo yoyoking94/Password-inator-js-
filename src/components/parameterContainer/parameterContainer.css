@@ -1,0 +1,13 @@
+.parameterContainer {
+    width: 540px;
+    height: 528px;
+    flex-shrink: 0;
+    background: var(--Dark-Grey, #24232C);
+
+    padding: 24px 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}

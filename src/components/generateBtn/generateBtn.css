@@ -1,0 +1,50 @@
+.generateBtn {
+    width: 476px;
+    height: 65px;
+    flex-shrink: 0;
+    background: var(--Neon-Green, #A4FFAF);
+    border: 2px solid var(--Neon-Green, #A4FFAF);
+
+    cursor: pointer;
+}
+
+.generateBtn:active {
+    background: none;
+    border: 2px solid var(--Neon-Green, #A4FFAF);
+}
+
+.generateBtn:hover {
+    border: 2px solid var(--Neon-Green, #A4FFAF);
+}
+
+.generateBtn>span {
+    color: var(--Dark-Grey, #24232C);
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Body (M) */
+    font-family: JetBrains Mono;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-right: 24px;
+}
+
+
+.generateBtn:active>span {
+    color: var(--Neon-Green, #A4FFAF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Body (M) */
+    font-family: JetBrains Mono;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.generateBtn:active>svg>path {
+    fill: #A4FFAF;
+}
