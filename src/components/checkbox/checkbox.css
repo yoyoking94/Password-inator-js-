@@ -5,7 +5,7 @@
     align-items: flex-start;
 }
 
-.checkbox label {
+.checkboxSpan {
     color: var(--Almost-White, #E6E5EA);
     font-feature-settings: 'clig' off, 'liga' off;
 

@@ -72,6 +72,6 @@
     cursor: pointer;
 }
 
-.copiedBtn>svg>path:active {
+.copiedBtn>svg:active>path {
     fill: #fff;
 }

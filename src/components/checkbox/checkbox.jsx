@@ -1,33 +1,17 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 
-/* import checkbox component style */
-import './checkbox.css'
+const Checkbox = ({ type = 'checkbox', name, checked = false, onChange }) => (
+    <>
+        <input type={type} name={name} checked={checked} onChange={onChange} />
+        <span className='checkmark'></span>
+    </>
+);
 
-class Checkbox extends React.Component {
-    render() {
-        return <div className='checkbox'>
-            <label htmlFor="upperLetters" className='customCheckbox'>
-                <input type="checkbox" name="upperLetters" id="upperLetters" />
-                <span className="checkmark"></span>
-                Include Uppercase Letters
-            </label>
-            <label htmlFor="lowerLetters" className='customCheckbox'>
-                <input type="checkbox" name="lowerLetters" id="lowerLetters" />
-                <span className="checkmark"></span>
-                Include Lowercase Letters
-            </label>
-            <label htmlFor="numbers" className='customCheckbox'>
-                <input type="checkbox" name="numbers" id="numbers" />
-                <span className="checkmark"></span>
-                Include Numbers
-            </label>
-            <label htmlFor="symbols" className='customCheckbox'>
-                <input type="checkbox" name="symbols" id="symbols" />
-                <span className="checkmark"></span>
-                Include Symbols
-            </label>
-        </div>;
-    }
+Checkbox.propTypes = {
+    type: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    checked: PropTypes.bool,
+    onChange: PropTypes.func.isRequired,
 }
 
 export default Checkbox;
