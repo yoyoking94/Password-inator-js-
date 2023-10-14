@@ -6,20 +6,22 @@ import './parameterContainer.css'
 
 /* Import components */
 import Range from '../range/range';
-import CheckboxContainer from '../checkbox/checkboxContainer';
+import CheckboxContainer from '../checkbox/checkbox';
 import Strength from '../strength/strength';
 import GenerateBtn from '../generateBtn/generateBtn';
 
 class ParameterContainer extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
-        const { value, setValue } = this.props
-        const { checked, setChecked } = this.props
+        const { value, setValue, checked, setChecked, strength, setStrength } = this.props
 
         return <div className='parameterContainer'>
             <Range value={value} setValue={setValue} />
             <CheckboxContainer checked={checked} setChecked={setChecked} />
-            <Strength />
-            <GenerateBtn />
+            <Strength strength={strength} setStrength={setStrength} />
+            <GenerateBtn handleGenerate={this.props.handleGenerate} />
         </div>;
     }
 }
