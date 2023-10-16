@@ -44,7 +44,7 @@ input[type="range"] {
     height: 8px;
 
     background-image: linear-gradient(rgb(164, 255, 175), rgb(164, 255, 175));
-    background-size: 50% 100%;
+    background-size: 25% 100%;
     background-repeat: no-repeat;
 }
 

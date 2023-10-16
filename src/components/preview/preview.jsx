@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 
 /* import preview component style */
@@ -11,6 +12,8 @@ class Preview extends React.Component {
     }
 
     handleClick() {
+        navigator.clipboard.writeText(this.props.password)
+
         const copied = document.getElementById('copied')
         copied.classList.add('active');
         setTimeout(function () {

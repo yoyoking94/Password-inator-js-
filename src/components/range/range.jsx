@@ -26,7 +26,7 @@ class Range extends React.Component {
                 <span className='characterValue'>{this.props.value}</span>
             </div>
             <div>
-                <input type="range" name="range" id="rangeInput" min={0} defaultValue={50} max={100} onChange={this.handleChange} />
+                <input type="range" name="range" id="rangeInput" min={0} defaultValue={25} max={100} onChange={this.handleChange} />
             </div>
         </div>;
     }

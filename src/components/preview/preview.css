@@ -17,7 +17,7 @@
     background: none;
     outline: none;
     cursor: initial;
-    width: 50%;
+    width: 100%;
 
     color: var(--Almost-White, #E6E5EA);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -41,6 +41,7 @@
 .preview>div>span.active {
     display: block;
     color: var(--Neon-Green, #A4FFAF);
+    background-color: #24232C;
     font-feature-settings: 'clig' off, 'liga' off;
 
     /* Body (M) */
