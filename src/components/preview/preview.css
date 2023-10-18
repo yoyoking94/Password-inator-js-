@@ -76,3 +76,9 @@
 .copiedBtn>svg:active>path {
     fill: #fff;
 }
+
+@media screen and (max-width: 540px) {
+    .preview {
+        width: 100%;
+    }
+}

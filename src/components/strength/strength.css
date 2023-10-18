@@ -71,3 +71,9 @@
     border: 2px solid var(--Neon-Green, #A4FFAF);
     background: var(--Neon-Green, #A4FFAF);
 }
+
+@media screen and (max-width: 540px) {
+    .strength {
+        width: 100%;
+    }
+}

@@ -9,8 +9,6 @@ import Checkbox from './components/checkbox/checkboxes'
 import Strength from './components/strength/strength'
 import GenerateBtn from './components/generateBtn/generateBtn'
 
-/* import ParameterContainer from './components/parameterContainer/parameterContainer' */
-
 function App() {
 
   const [password, setPassword] = useState('')
@@ -19,11 +17,6 @@ function App() {
   const [strength, setStrength] = useState('')
 
   function handleGenerate() {
-    /* console.log(checked);
-    console.log(checked.isUpper);
-    console.log(checked.isLower);
-    console.log(checked.isNumber);
-    console.log(checked.isSymbol); */
 
     const upperChar = [`A`, `B`, `C`, `D`, `E`, `F`, `G`, `H`, `I`, `J`, `K`, `L`, `M`, `N`, `O`, `P`, `Q`, `R`, `S`, `T`, `U`, `V`, `W`, `X`, `Y`, `Z`];
     const lowerChar = [`a`, `b`, `c`, `d`, `e`, `f`, `g`, `h`, `i`, `j`, `k`, `l`, `m`, `n`, `o`, `p`, `q`, `r`, `s`, `t`, `u`, `v`, `w`, `y`, `z`];

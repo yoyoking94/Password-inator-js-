@@ -48,3 +48,9 @@
 .generateBtn:active>svg>path {
     fill: #A4FFAF;
 }
+
+@media screen and (max-width: 540px) {
+    .generateBtn {
+        width: 100%;
+    }
+}
